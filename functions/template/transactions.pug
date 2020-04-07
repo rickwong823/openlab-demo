@@ -1,0 +1,20 @@
+extend ./layout
+block title
+  title= title
+
+block content
+    h1= title
+
+    table(class='table table-striped')
+        tr
+            th Date
+            th Description
+            th Amount
+
+        each tx in json.transactions
+            tr
+                td= tx.details.posted
+                td= tx.details.description
+                td= tx.details.value.amount + ' ' + tx.details.value.currency
+
+

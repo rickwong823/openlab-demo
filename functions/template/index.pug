@@ -1,0 +1,14 @@
+extend ./layout
+block title
+  title= title
+
+block content
+    <div class="jumbotron">
+        <h1 class="display-4">Hello!</h1>
+        <p class="lead">This is a sample application for retrieving your banking information in OpenLab.</p>
+        <hr class="my-4">
+        <p>Please login your bank to grant us the access to your data.</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="./connect" role="button">Grant Access</a>
+        </p>
+    </div>

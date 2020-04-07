@@ -1,0 +1,16 @@
+extend ./layout
+block title
+  title= title
+
+block content
+  h1= title
+
+  ul(class='list-group')
+    each account in json.accounts
+      li(class='list-group')
+        ='[' + account.account_type + ']'
+        a(href=`/banks/${account.bank_id}/accounts/${account.id}/transactions`)= account.account_routings[0].address
+    else
+      li There are no accounts
+
+

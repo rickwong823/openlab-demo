@@ -1,0 +1,25 @@
+extend ./layout
+block title
+  title My Info
+block content
+    h1 Personal Information
+    
+    div(class='container')
+        div(class='row')
+            div(class='col-1') Name
+            div(class='col-2')= customer.legal_name
+
+        div(class='row')
+            div(class='col-1') Email
+            div(class='col-2')= customer.email
+
+        div(class='row')
+            div(class='col-1') Mobile
+            div(class='col-2')
+                span(id='col')= customer.mobile_phone_number
+
+    script. 
+        var customer = {
+            bankId: "!{customer.bank_id}",
+            customerId: "!{customer.customer_id}"
+        }

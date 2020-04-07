@@ -1,0 +1,22 @@
+extend ./layout
+block title
+  title Signed In
+
+block content
+ 
+    h1 Links 
+
+    p Now you can try authenticated API calls like this:
+    
+    ul#links
+        li
+            a(href="/getMyAccounts") Get My Accounts
+        li
+            a(href="/getMyAccountsJson") Get My Accounts (JSON)
+        li
+            a(href="/customer") My Info
+        li
+            a(href='https://openlab.openbankproject.com/user_mgt/logout') Logout
+
+
+    p Please see your API Explorer for the full list of API calls available.
