@@ -19,7 +19,7 @@
     "firebase-cookie-session": "^3.0.0",
     "firebase-functions": "^3.3.0",
     "oauth": "^0.9.15",
-    "pug": "^2.0.4"
+    "pug": "^3.0.1"
   },
   "devDependencies": {
     "eslint": "^5.12.0",
